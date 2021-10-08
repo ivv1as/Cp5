@@ -1,11 +1,23 @@
 print('Введите длину первого прямоугольника')
-a = int(input()) 
+try:
+    a = int(input()) 
+except ValueError: 
+    print('Число должно быть целым и неотрицательным')
 print('Введите ширину первого прямоугольника')
-b = int(input())
+try: 
+    b = int(input())
+except ValueError:
+    print('Число должно быть целым и неотрицательным')
 print('Введите длину второго прямоугольника')
-c = int(input())
+try: 
+    c = int(input())
+except ValueError:
+    print('Число должно быть целым и неотрицательным')
 print('Введите длинну второго прямоугольника')
-d = int(input())
+try:
+    d = int(input())
+except ValueError:
+    print('Число должно быть целым и неотрицательным')
 if ((c-a)>=1 and (d-b)>=1) :print('Да')
 else: 
     if ((c-d)>=1 and (d-a)>=1) :print('Да')
